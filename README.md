@@ -8,11 +8,13 @@ Inspired by the concept of **Reynolds number** in fluid dynamics, it identifies 
 ## 🚀 What It Does
 
 - Calculates a **Test Reynolds Number** to quantify test instability
-- Parses test result outputs (e.g., xUnit XML)
-- Flags flaky, slow, and frequently failing tests
-- Visualizes test health across time and CI pipelines
-- Analyzes test source code for **bad assert patterns** (e.g., missing or bad asserts)
-- Helps SDETs, QA leads, and DevOps prioritize test fixes and refactors
+- Flags flaky, slow, or frequently failing tests via xUnit report analysis
+- Detects **bad `assert` usage** in test code (missing messages, weak logic, etc.)
+- **Traces and compares stack traces** across test runs to detect:
+  - High stack trace noise
+  - Repeated vs. unique failure signatures
+  - Test failures that shift unpredictably between runs
+- Surfaces the **most disruptive tests** with clear metrics and reports to help QA engineers, SDETs, and developers improve test reliability, readability, and effectiveness
 
 ---
 
